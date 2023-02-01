@@ -63,4 +63,6 @@ return require('packer').startup(function(use)
     use('xiyaowong/nvim-transparent')
     use "lukas-reineke/lsp-format.nvim"
 
+    use('kdheepak/lazygit.nvim')
+
 end)

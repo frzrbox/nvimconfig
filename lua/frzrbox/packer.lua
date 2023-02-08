@@ -59,6 +59,14 @@ return require('packer').startup(function(use)
     use({ "akinsho/toggleterm.nvim", commit = "aaeed9e02167c5e8f00f25156895a6fd95403af8" })
     use { "lewis6991/gitsigns.nvim", commit = "f98c85e7c3d65a51f45863a34feb4849c82f240f" }
 
+    -- Comments
+    use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+    }
+
     -- This keeps the backround transparent for all views
     use('xiyaowong/nvim-transparent')
     use "lukas-reineke/lsp-format.nvim"

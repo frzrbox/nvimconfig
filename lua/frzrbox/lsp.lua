@@ -8,7 +8,8 @@ lsp.ensure_installed({
 	'sumneko_lua',
 	'rust_analyzer',
 	"html",
-	"cssls"
+	"cssls",
+    "eslint"
 })
 
 -- Fix Undefined global 'vim'
@@ -21,6 +22,7 @@ lsp.configure('sumneko_lua', {
 		}
 	}
 })
+
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}

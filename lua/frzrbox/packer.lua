@@ -67,6 +67,9 @@ return require('packer').startup(function(use)
     end
     }
 
+    -- Tmux Navigator
+    use 'christoomey/vim-tmux-navigator'
+
     -- This keeps the backround transparent for all views
     use('xiyaowong/nvim-transparent')
     use "lukas-reineke/lsp-format.nvim"
